@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浪漫跨年夜</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 音乐控制器 -->
+    <div class="music-control">
+        <audio id="bgMusic" loop>
+            <source src="audio/background-music.mp3" type="audio/mp3">
+        </audio>
+        <button id="musicToggle">🎵</button>
+    </div>
+
+    <!-- 主要内容容器 -->
+    <div class="container">
+        <div class="question-box" id="questionBox">
+            <h1>准备好跨年了吗？</h1>
+            <div class="options">
+                <button class="option" data-next="1">当然啦！让我们开始吧 ✨</button>
+                <button class="option" data-next="2">等等，我还没准备好 🙈</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 所有画布容器 -->
+    <div class="canvas-container">
+        <!-- 烟花画布 -->
+        <canvas id="fireworks"></canvas>
+        
+        <!-- 孔明灯画布 -->
+        <canvas id="lanterns"></canvas>
+        
+        <!-- 鼠标轨迹画布 -->
+        <canvas id="mouseTrail"></canvas>
+
+        <!-- 飘落的元素画布 -->
+        <canvas id="fallingItems"></canvas>
+    </div>
+
+    <script src="js/fireworks.js"></script>
+    <script src="js/lanterns.js"></script>
+    <script src="js/fallingItems.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
